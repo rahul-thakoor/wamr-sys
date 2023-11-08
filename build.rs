@@ -18,7 +18,7 @@ fn main() {
         "cargo:rustc-link-search=native={}",
         dst.join("build").display()
     );
-    println!("cargo:rustc-link-lib=iwasm");
+    println!("cargo:rustc-link-lib=libiwasm");
     println!("cargo:rustc-link-lib=vmlib");
 
     let bindings = bindgen::Builder::default()
